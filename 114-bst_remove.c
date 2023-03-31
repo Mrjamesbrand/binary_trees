@@ -97,4 +97,7 @@ bst_t *bst_remove(bst_t *root, int value)
 {
 	return (bst_remove_recursive(root, root, value));
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dcf337340eeb856205f2ec4990fb5737d4839046

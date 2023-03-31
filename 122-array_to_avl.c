@@ -1,15 +1,15 @@
 #include "binary_trees.h"
 
 /**
- * array_to_bst - Builds a binary search tree from an array.
+ * array_to_avl - Builds an AVL tree from an array.
  * @array: A pointer to the first element of the array to be converted.
  * @size: The number of elements in @array.
  *
- * Return: A pointer to the root node of the created BST, or NULL upon failure.
+ * Return: A pointer to the root node of the created AVL, or NULL upon failure.
  */
-bst_t *array_to_bst(int *array, size_t size)
+avl_t *array_to_avl(int *array, size_t size)
 {
-	bst_t *tree = NULL;
+	avl_t *tree = NULL;
 	size_t i, j;
 
 	if (array == NULL)
@@ -24,14 +24,10 @@ bst_t *array_to_bst(int *array, size_t size)
 		}
 		if (j == i)
 		{
-			if (bst_insert(&tree, array[i]) == NULL)
+			if (avl_insert(&tree, array[i]) == NULL)
 				return (NULL);
 		}
 	}
 
 	return (tree);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> dcf337340eeb856205f2ec4990fb5737d4839046

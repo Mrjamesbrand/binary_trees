@@ -20,4 +20,7 @@ bst_t *bst_search(const bst_t *tree, int value)
 	}
 	return (NULL);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> dcf337340eeb856205f2ec4990fb5737d4839046
